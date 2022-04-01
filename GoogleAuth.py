@@ -1,6 +1,6 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
-import telepot
+import telebot
 import pprint as pp
 
 
@@ -12,7 +12,7 @@ import os
 
 
 def connect_telepot():
-    bot = telepot.Bot('5178608519:AAGqDLaQzbTEuyaGC5R9-LoZ45Y_8DxQ3Qg')
+    bot = telepot('5178608519:AAGqDLaQzbTEuyaGC5R9-LoZ45Y_8DxQ3Qg')
     # bot.getMe()
     response = bot.getUpdates()
     pp.pprint(response)
